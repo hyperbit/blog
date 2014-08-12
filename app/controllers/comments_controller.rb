@@ -10,6 +10,7 @@ class CommentsController < ApplicationController
 		@comment = @article.comments.find(params[:id])
 		@comment.destroy
 		redirect_to article_path(@article)
+	end
 	 
 	private
 		def comment_params
