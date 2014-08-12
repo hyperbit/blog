@@ -5,6 +5,15 @@
 html, body {
 	height:100%;
 }
+
+/* SIDENAV */
+.sidenav {
+	background-color: #F2F2F2;
+	border-radius: 5px;
+	margin: 15px;
+}
+
+/* SKROLLR PARALLAX */
 .skrollr-desktop body {
 	height:100% !important;
 }
@@ -71,7 +80,7 @@ p {
 	height:100%;
 }
 .header, .content {
-	background:#fff;
+	background: transparent;
 	padding:1em;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
