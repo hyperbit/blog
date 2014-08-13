@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   	if @user.save
   		redirect_to articles_path, :notice => "Signed up!"
   	else
-  		render "new"
+  		render :action => "new", :layouts => false
   	end
   end
 
