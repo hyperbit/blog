@@ -28,7 +28,7 @@ cite.quote {
 	height:100% !important;
 }
 body {
-	font-family:sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 p {
 	margin:1em 0;
@@ -127,9 +127,11 @@ div.header.show-for-large-only {
 }
 .article h1 > a {
 	color: #000;
+	font-family: 'Roboto', sans-serif;
 }
 .article h1 > a:hover {
 	color: #FF3C1F;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* FOOTER */
