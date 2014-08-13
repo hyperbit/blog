@@ -19,7 +19,10 @@
     <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
- 
+
+  <script>
+    CKEDITOR.replace( 'article_text' );
+  </script>
   <p>
     <%= f.submit %>
   </p>
