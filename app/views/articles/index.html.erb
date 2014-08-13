@@ -1,25 +1,12 @@
-<h1>Listing articles</h1>
-<% if current_user %>
-  <%= link_to 'New article', new_article_path %>
-<% end %>
 <div class="article">
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Text</th>
-    </tr>
-   
-    <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= article.text %></td>
-        <td><%= link_to 'Show', article_path(article) %></td>
-        <% if current_user %>
-          <td><%= link_to 'Edit', edit_article_path(article) %></td>
-          <td><%= link_to 'Destroy', article_path(article),
-                        method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
+  <% @articles.each do |article| %>
+    <h1><%= article.title %></h1><br />
+    <%= article.text %><br />
+    <%= link_to 'Show', article_path(article) %> 
+    <% if current_user %>
+      | <%= link_to 'Edit', edit_article_path(article) %>
+      | <%= link_to 'Destroy', article_path(article),
+                    method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
-  </table>
+  <% end %>
 </div>

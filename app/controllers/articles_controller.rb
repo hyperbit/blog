@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
 
 	def new
 		@article = Article.new
+		render 'new'
 	end
 
 	def create

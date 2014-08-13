@@ -3,6 +3,9 @@
 			<div class="medium-3 columns">
 				<div data-magellan-expedition="fixed" class="sidenav">
 					<ul class="side-nav">
+						<% if current_user %>
+							<li><%= link_to 'New article', new_article_path %></li>
+						<% end %>
 						<li><a href="#">Link 1</a></li>
 						<li><a href="#">Link 2</a></li>
 						<li><a href="#">Link 3</a></li>
