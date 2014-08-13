@@ -6,8 +6,7 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "hyperbit" %></title>
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag    "application" %>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>    <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
@@ -39,7 +38,17 @@
 		    	<%= link_to "Log out", log_out_path %>
 			  <% end %>
 		</div>
-		<div class="gap gap-100" style="background-image:url(<%= asset_path("trifid.jpg", :alt => "Trifid Nebula - NASA/ESA") %>);"></div>
+		<div class="gap gap-100" style="background-image:url(<%= asset_path("trifid.jpg", :alt => "Trifid Nebula - NASA/ESA") %>);">
+			<div class="small-12 columns header text-center show-for-small-only">
+				<span class="header">HYPERBIT</span>
+			</div>
+			<div class="small-12 columns header text-center show-for-medium-only">
+				<span class="header">HYPERBIT</span>
+			</div>
+			<div class="small-12 columns header text-center show-for-large-only">
+				<span class="header">HYPERBIT</span>
+			</div>
+		</div>
 
 		<!-- Main Content -->
 		<div class="row">

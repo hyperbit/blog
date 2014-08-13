@@ -90,6 +90,26 @@ p {
 .content-full {
 	height:100%;
 }
+div.header {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	height: 500px;
+	line-height: 500px;
+}
+span.header {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+div.header.show-for-small-only {
+	font-size: 4em;
+}
+div.header.show-for-medium-only {
+	font-size: 8em;
+}
+div.header.show-for-large-only {
+	font-size: 13em;
+}
 .article {
 	border-right: inset;
 	border-color: #F2F2F2;
