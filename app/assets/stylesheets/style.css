@@ -6,6 +6,16 @@ html, body {
 	height:100%;
 }
 
+blockquote.quote {
+	color: #fff;
+	font-size: 1.5em;
+}
+
+cite.quote {
+	color: #464368;
+	font-size: 1em;
+}
+
 /* SIDENAV */
 .sidenav {
 	background-color: #F2F2F2;
@@ -92,6 +102,7 @@ p {
 }
 div.header {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
 	color: #fff;
 	height: 500px;
 	line-height: 500px;
@@ -117,8 +128,19 @@ div.header.show-for-large-only {
 
 /* FOOTER */
 #footer {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
 	height: 50%;
-	color: #66D9EB;
-	background-color: #272822;
+	/*color: #66D9EB;*/
+	/*background-color: #272822;*/
+	color: #fff;
+	background-color: #5F5D85;
 	padding-top: 15px;
+}
+
+#footer a {
+	color: inherit;
+}
+#footer a:hover {
+	color: #464368;
 }
