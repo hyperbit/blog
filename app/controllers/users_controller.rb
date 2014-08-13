@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def new
   	@user = User.new
-	render :action => "new", :layout => false
+    render :action => "new", :layout => false
   end
 
   def create
