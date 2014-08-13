@@ -31,15 +31,16 @@
 			<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 	</div>
 
-  	<div id="skrollr-body" class="small-12 columns">
+  	<div id="skrollr-body">
 		<div id="outerspace">
 			<% if current_user %>
     			Logged in as <%= current_user.username %>.
 		    	<%= link_to "Log out", log_out_path %>
-		  <% end %>
+			  <% end %>
 		</div>
 		<div class="gap gap-100" style="background-image:url(<%= asset_path("trifid.jpg", :alt => "Trifid Nebula - NASA/ESA") %>);"></div>
 
 		<!-- Main Content -->
-		<div class="small-12 medium-8 medium-push-1 columns" style="padding-top:50px;">
+		<div class="row">
+			<div class="small-12 medium-8 medium-push-1 columns" style="padding-top:50px;">
 
