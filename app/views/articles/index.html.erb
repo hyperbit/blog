@@ -1,5 +1,5 @@
 <div class="article">
-  <% @articles.each do |article| %>
+  <% @articles.reverse.each do |article| %>
     <h1><%= link_to article.title, article_path(article) %></a></h1><br />
     <%=
       truncate(strip_tags(article.text), length: 500) {
