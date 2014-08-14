@@ -26,6 +26,12 @@ div.logo {
 	border-radius: 5px;
 	margin: 0 15px;
 }
+.sidenav.no-bullet ul {
+	color: #FF3C1F;
+}
+.side-nav ul li a:hover {
+	color: #FF3C1F;
+}
 
 /* SKROLLR PARALLAX */
 .skrollr-desktop body {
@@ -160,6 +166,11 @@ div.header.show-for-large-only {
 }
 #continue:hover {
 	color: #FF3C1F;
+}
+.thumbnail {
+	margin: 15px 0 0 15px;
+	vertical-align: middle;
+	border-radius: 50%;
 }
 
 /* FOOTER */

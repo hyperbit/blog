@@ -1,43 +1,48 @@
 			</div>
 			<!-- Sidenav -->
-			<div class="medium-3 columns">
+			<div class="medium-3 columns hide-for-small">
 				<div data-magellan-expedition="fixed" class="sidenav">
-					<ul class="side-nav">
+					<%= image_tag("pixelface.png", :class => "thumbnail", :align => "middle") %>
+					<ul id="sidenav" class="side-nav no-bullet">
+						<li><a href="https://www.google.com/maps/place/South+San+Francisco,+CA/@37.7027382,-122.4509376,12z/data=!4m2!3m1!1s0x808f790543feecef:0xf83a7579e756335d" target="_blank"><i class="fa fa-location-arrow"></i> Bay Area, CA</a></li>
+						<li><a href="http://github.com/hyperbit" target="_blank"><i class="fa fa-github"></i> hyperbit</a></li>
+						<li><a href="mailto:jcano001@ucr.edu"><i class="fa fa-envelope-o"></i> jcano001@ucr.edu</a></li>
+						<li><a href="/JustinCanoCEResume.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Resume</a></li>
 						<% if current_user %>
 							<li><%= link_to 'New article', new_article_path %></li>
+							<li><a href="#">Add Quote</a></li>
 						<% end %>
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
+		<!-- Footer -->
 		<div id="footer" class="footer">
-			<div class="small-4 columns">
-				<div class="row">
-					<div class="small-10 columns">
-						<ul class="no-bullet">
-							<li><i class="fa fa-location-arrow"></i> <a href="https://www.google.com/maps/place/South+San+Francisco,+CA/@37.7027382,-122.4509376,12z/data=!4m2!3m1!1s0x808f790543feecef:0xf83a7579e756335d" target="_blank">Bay Area, CA</a></li>
-							<li><i class="fa fa-github"></i> <a href="http://github.com/hyperbit" target="_blank">hyperbit</a></li>
-							<li><i class="fa fa-envelope-o"></i> <a href="mailto:jcano001@ucr.edu">jcano001@ucr.edu</a></li>
-						</ul>
+			<div class="show-for-medium-up">
+				<div class="medium-3 columns" style="padding-top:25px;">
+					<div class="row">
+						<div class="small-12 columns" align="center">
+						Created by Justin Cano<br />with lots of <i class="fa fa-heart"></i> <br />
+						<%= image_tag("heroku-icon.png", :alt => "Heroku") %>
+						<%= image_tag("rails-icon.png", :alt => "Ruby on Rails") %><br />
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="small-10 columns">
-					Created by Justin Cano using <br />
-					<%= image_tag("heroku-icon.png", :alt => "Heroku") %>
-					<%= image_tag("rails-icon.png", :alt => "Ruby on Rails") %><br />
-							and lots of <i class="fa fa-heart"></i>
+				<div class="medium-6 columns end">
+					<div class="row">
+						<div class="small-12 columns">
+							<blockquote class="quote"><i class="fa fa-quote-left"></i> Those people who think they know everything are a great annoyance to those of us who do. <i class="fa fa-quote-right"></i><cite class="quote">Isaac Asimov</cite></blockquote>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="small-7 columns small-offset-1">
-				<div class="row">
-					<div class="small-12 columns">
-						<blockquote class="quote"><i class="fa fa-quote-left"></i> Those people who think they know everything are a great annoyance to those of us who do. <i class="fa fa-quote-right"></i><cite class="quote">Isaac Asimov</cite></blockquote>
+			<div class="show-for-small-only">
+				<div class="row" style="padding-top:50px;">
+					<div class="small-12 columns" align="center">
+						Created by Justin Cano with lots of <i class="fa fa-heart"></i> <br />
+						<%= image_tag("heroku-icon.png", :alt => "Heroku") %>
+						<%= image_tag("rails-icon.png", :alt => "Ruby on Rails") %><br />
 					</div>
 				</div>
 			</div>
