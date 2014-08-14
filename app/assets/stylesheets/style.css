@@ -10,7 +10,7 @@ blockquote.quote {
 	color: #fff;
 	font-size: 1.5em;
 }
-blockquote.quote-index {
+blockquote.quote.index {
 	color: #000;
 	font-size: 1.5em;
 }
@@ -18,7 +18,7 @@ cite.quote {
 	color: #464368;
 	font-size: 1em;
 }
-cite.quote-index {
+cite.quote.index {
 	color: #FF3C1F;
 	font-size: 1em;
 }
