@@ -147,8 +147,11 @@ div.header.show-for-large-only {
 .article h3 {
 	font-family: 'Roboto', sans-serif;
 }
-.time_ago {
+.comment .time_ago {
 	color: #FF3C1F;
+}
+.article .timestamp {
+	color: #AAAAAA;
 }
 #continue {
 	color: #000;
