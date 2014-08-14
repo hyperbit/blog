@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
 
 	def new
 		@article = Article.new
-		render 'new'
+		render :action => 'new', :layout => false
 	end
 
 	def create
