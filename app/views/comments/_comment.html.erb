@@ -1,18 +1,22 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
+<% if not comment.created_at.blank? %>
+<div class="comment">
+	<strong><%= comment.commenter %></strong>
+	<em class="time_ago"><%= time_ago_in_words(comment.created_at) %> ago</em>
+	<div class="panel">
+		<p>
+	  	<%= comment.body %>
+		</p>
+	</div>
 
-<% if current_user %>
-	<p>
+	<% if current_user %>
+		<p>
 
-		<%= link_to 'Destroy Comment', [comment.article, comment],
-	               method: :delete,
-	               data: { confirm: 'Are you sure?' } %>
-	</p>
+			<%= link_to 'Destroy Comment', [comment.article, comment],
+		               method: :delete,
+		               data: { confirm: 'Are you sure?' } %>
+		</p>
+	<% end %>
+</div>
+<% else %>
+	<div class="panel"></div>
 <% end %>
