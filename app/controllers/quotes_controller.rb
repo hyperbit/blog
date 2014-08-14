@@ -31,6 +31,16 @@ class QuotesController < ApplicationController
     	end
 	end
 
+	def update
+		@quote = Quote.find(params[:id])
+	 
+		if @quote.update(article_params)
+	    	redirect_to root_url
+		else
+	    	render 'edit'
+		end
+	end
+
 	def destroy
 		@quote = Quote.find(params[:id])
 		if current_user
