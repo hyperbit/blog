@@ -129,6 +129,11 @@ div.header.show-for-large-only {
 	border-right: inset;
 	border-color: #F2F2F2;
 	font-family: 'Roboto', sans-serif;
+	padding-right: 15px;
+}
+.article h1 {
+	color: #FF3C1F;
+	font-family: 'Roboto', sans-serif;
 }
 .article h1 > a {
 	color: #FF3C1F;
@@ -140,8 +145,18 @@ div.header.show-for-large-only {
 	/*color: #FF3C1F;*/
 	font-family: 'Roboto', sans-serif;
 }
+.article h3 {
+	font-family: 'Roboto', sans-serif;
+}
+.comment .time_ago {
+	color: #FF3C1F;
+}
+.article .timestamp {
+	color: #AAAAAA;
+}
 #continue {
 	color: #000;
+	padding-bottom: 10px;
 }
 #continue:hover {
 	color: #FF3C1F;

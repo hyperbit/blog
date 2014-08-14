@@ -1,24 +1,28 @@
 <div class="article">
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= simple_format(@article.text) %>
-</p>
+	<h1><%= @article.title %></h1>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+	<em class="timestamp"><%= @article.created_at.strftime("%A, %B %d, %Y") %></em>
+	 
+	<p>
+	  <%= simple_format(@article.text) %>
+	</p>
 
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
-
-<%= link_to 'Back', articles_path, :class => "button" %>
-    <% if current_user %>
-		 <%= link_to 'Edit', edit_article_path(@article), :class => "button" %>
+	<% if current_user %>
+		<%= link_to 'Back', articles_path, :class => "button" %>
+		<%= link_to 'Edit', edit_article_path(@article), :class => "button" %>
 		 <%= link_to 'Destroy', article_path(@article),
-                    method: :delete, data: { confirm: 'Are you sure?' }, :class => "button alert" %>
+	                method: :delete, data: { confirm: 'Are you sure?' }, :class => "button alert" %>
+	<% else %>
+		<%= link_to raw("<p><em><i class=\"fa fa-arrow-circle-o-left\"></i> Back</em></p>"), articles_path, :id => "continue" %>
 	<% end %>
+</div>
+<div>
+	<hr>
+	<div class="small-12 medium-7">
+		<h3>Add a comment:</h3>
+		<%= render "comments/form" %>
+	</div>
+	<h3>Comments</h3>
+	<%= render @article.comments %>
+
 </div>
