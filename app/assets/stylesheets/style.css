@@ -10,9 +10,16 @@ blockquote.quote {
 	color: #fff;
 	font-size: 1.5em;
 }
-
+blockquote.quote.index {
+	color: #000;
+	font-size: 1.5em;
+}
 cite.quote {
 	color: #464368;
+	font-size: 1em;
+}
+cite.quote.index {
+	color: #FF3C1F;
 	font-size: 1em;
 }
 
@@ -25,12 +32,6 @@ div.logo {
 	background-color: #F2F2F2;
 	border-radius: 5px;
 	margin: 0 15px;
-}
-.sidenav.no-bullet ul {
-	color: #FF3C1F;
-}
-.side-nav ul li a:hover {
-	color: #FF3C1F;
 }
 
 /* SKROLLR PARALLAX */

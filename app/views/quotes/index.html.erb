@@ -1,0 +1,17 @@
+<div class="quote">
+  <%= link_to "Back", articles_path, :class => "button" %>
+  <% @quotes.each do |quote| %>
+    <blockquote class="quote index">
+      <i class="fa fa-quote-left"></i>
+        <%= quote.quote %>
+      <i class="fa fa-quote-right"></i><cite class="quote index"><%= quote.author %></cite>
+    </blockquote>
+     
+    <% if current_user %>
+      <%= link_to 'Edit', edit_quote_path(quote) %>
+      | <%= link_to 'Destroy', quote_path(quote),
+                    method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+  <hr>
+  <% end %>
+</div>

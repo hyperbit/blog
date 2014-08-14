@@ -10,7 +10,7 @@
 						<li><a href="/JustinCanoCEResume.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Resume</a></li>
 						<% if current_user %>
 							<li><%= link_to 'New article', new_article_path %></li>
-							<li><a href="#">Add Quote</a></li>
+							<li><%= link_to 'Add Quote', new_quote_path %></li>
 						<% end %>
 					</ul>
 				</div>
@@ -32,7 +32,12 @@
 				<div class="medium-6 columns end">
 					<div class="row">
 						<div class="small-12 columns">
-							<blockquote class="quote"><i class="fa fa-quote-left"></i> Those people who think they know everything are a great annoyance to those of us who do. <i class="fa fa-quote-right"></i><cite class="quote">Isaac Asimov</cite></blockquote>
+							<% random_quote = Quote.offset(rand(Quote.count)).first %>
+							<blockquote class="quote">
+						      <i class="fa fa-quote-left"></i>
+						        <%= random_quote.quote %>
+						      <i class="fa fa-quote-right"></i><cite class="quote"><%= random_quote.author %></cite>
+						    </blockquote>
 						</div>
 					</div>
 				</div>
