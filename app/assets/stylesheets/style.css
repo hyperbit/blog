@@ -124,6 +124,8 @@ span.header {
 }
 div.header.show-for-small-only {
 	font-size: 4em;
+	height: 325px;
+	line-height: 325px;
 }
 div.header.show-for-medium-only {
 	font-size: 8em;
