@@ -1,7 +1,12 @@
 <div class="article">
   <% @articles.each do |article| %>
     <h1><%= link_to article.title, article_path(article) %></a></h1><br />
-    <%= article.text %><br />
+    <%=
+      truncate(strip_tags(article.text), length: 500) {
+        link_to raw("<p><em>Continue reading <i class=\"fa fa-arrow-circle-o-right\"></i></em></p>"), article_path(article), :id => "continue", :class => "right"
+      }
+    %>
+    <br />
      
     <% if current_user %>
       <%= link_to 'Edit', edit_article_path(article) %>

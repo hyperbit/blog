@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
 
 	def new
 		@article = Article.new
-		render 'new'
+		render :action => 'new', :layout => false
 	end
 
 	def create
@@ -25,6 +25,7 @@ class ArticlesController < ApplicationController
 
 	def edit
 		@article = Article.find(params[:id])
+    	render :action => 'edit', :layout => false
 	end
 
 	def update

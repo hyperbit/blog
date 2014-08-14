@@ -16,11 +16,15 @@ cite.quote {
 	font-size: 1em;
 }
 
+div.logo {
+	background-image: image-url("trifid.jpg");
+}
+
 /* SIDENAV */
 .sidenav {
 	background-color: #F2F2F2;
 	border-radius: 5px;
-	margin: 15px;
+	margin: 0 15px;
 }
 
 /* SKROLLR PARALLAX */
@@ -124,14 +128,23 @@ div.header.show-for-large-only {
 .article {
 	border-right: inset;
 	border-color: #F2F2F2;
+	font-family: 'Roboto', sans-serif;
 }
 .article h1 > a {
-	color: #000;
+	color: #FF3C1F;
+	/*color: #000;*/
 	font-family: 'Roboto', sans-serif;
 }
 .article h1 > a:hover {
-	color: #FF3C1F;
+	color: #000;
+	/*color: #FF3C1F;*/
 	font-family: 'Roboto', sans-serif;
+}
+#continue {
+	color: #000;
+}
+#continue:hover {
+	color: #FF3C1F;
 }
 
 /* FOOTER */
