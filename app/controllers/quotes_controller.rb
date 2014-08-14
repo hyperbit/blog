@@ -34,7 +34,7 @@ class QuotesController < ApplicationController
 	def update
 		@quote = Quote.find(params[:id])
 	 
-		if @quote.update(article_params)
+		if @quote.update(quote_params)
 	    	redirect_to root_url
 		else
 	    	render 'edit'
