@@ -143,12 +143,10 @@ div.header.show-for-large-only {
 }
 .article h1 > a {
 	color: #FF3C1F;
-	/*color: #000;*/
 	font-family: 'Roboto', sans-serif;
 }
 .article h1 > a:hover {
 	color: #000;
-	/*color: #FF3C1F;*/
 	font-family: 'Roboto', sans-serif;
 }
 .article h3 {
@@ -186,7 +184,7 @@ div.header.show-for-large-only {
 }
 
 #footer a {
-	color: inherit;
+	color: #F5F5F5;
 }
 #footer a:hover {
 	color: #464368;
