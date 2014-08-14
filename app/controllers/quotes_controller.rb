@@ -8,7 +8,7 @@ class QuotesController < ApplicationController
 		if current_user
 			render :action => 'new', :layout => false
 		else
-			redirect_to root_url
+			redirect_to articles_path
 		end
 	end
 
@@ -35,7 +35,7 @@ class QuotesController < ApplicationController
 		@quote = Quote.find(params[:id])
 	 
 		if @quote.update(quote_params)
-	    	redirect_to root_url
+	    	redirect_to articles_path
 		else
 	    	render 'edit'
 		end
