@@ -25,7 +25,11 @@ class ArticlesController < ApplicationController
 
 	def edit
 		@article = Article.find(params[:id])
-    	render :action => 'edit', :layout => false
+		if current_user
+    		render :action => 'edit', :layout => false
+	    else
+	    	redirect_to @article
+    	end
 	end
 
 	def update
