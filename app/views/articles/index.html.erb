@@ -1,7 +1,7 @@
 <div class="article">
   <% @articles.reverse.each do |article| %>
     <h1><%= link_to article.title, article_path(article) %></a></h1>
-    <em class="timestamp"><%=   article.created_at.strftime("%A, %B %d, %Y") %></em>
+    <em class="timestamp"><%= article.created_at.strftime("%A, %B %d, %Y") %></em>
     <p>
     <%=
       truncate(strip_tags(article.text), length: 500) {
