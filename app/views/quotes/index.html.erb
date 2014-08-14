@@ -1,13 +1,10 @@
 <div class="quote">
   <%= link_to "Back", articles_path, :class => "button" %>
   <% @quotes.each do |quote| %>
-    <blockquote>
-      <div class="quote index">
+    <blockquote class="quote index">
       <i class="fa fa-quote-left"></i>
         <%= quote.quote %>
-      <i class="fa fa-quote-right"></i>
-      </div>
-      <cite><span class="quote index"><%= quote.author %></span></cite>
+      <i class="fa fa-quote-right"></i><cite class="quote index"><%= quote.author %></cite>
     </blockquote>
      
     <% if current_user %>
