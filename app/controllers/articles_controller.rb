@@ -5,7 +5,11 @@ class ArticlesController < ApplicationController
 
 	def new
 		@article = Article.new
-		render :action => 'new', :layout => false
+		if current_user
+			render :action => 'new', :layout => false
+		else
+	    	redirect_to root_url
+    	end
 	end
 
 	def create
