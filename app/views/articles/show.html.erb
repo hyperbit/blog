@@ -1,6 +1,7 @@
 <div class="article">
-	<em class="timestamp"><%= @article.created_at.strftime("%B %d, %Y") %></em>
 	<h1><%= @article.title %></h1>
+
+	<em class="timestamp"><%= @article.created_at.strftime("%A, %B %d, %Y") %></em>
 	 
 	<p>
 	  <%= simple_format(@article.text) %>
@@ -14,10 +15,13 @@
 	<% else %>
 		<%= link_to raw("<p><em><i class=\"fa fa-arrow-circle-o-left\"></i> Back</em></p>"), articles_path, :id => "continue" %>
 	<% end %>
-
-	<h3>Add a comment:</h3>
-	<%= render "comments/form" %>
-
+</div>
+<div>
+	<hr>
+	<div class="small-12 medium-7">
+		<h3>Add a comment:</h3>
+		<%= render "comments/form" %>
+	</div>
 	<h3>Comments</h3>
 	<%= render @article.comments %>
 
