@@ -5,7 +5,11 @@ class ArticlesController < ApplicationController
 
 	def new
 		@article = Article.new
-		render :action => 'new', :layout => false
+		if current_user
+			render :action => 'new', :layout => false
+		else
+	    	redirect_to root_url
+    	end
 	end
 
 	def create
@@ -25,7 +29,11 @@ class ArticlesController < ApplicationController
 
 	def edit
 		@article = Article.find(params[:id])
-    	render :action => 'edit', :layout => false
+		if current_user
+    		render :action => 'edit', :layout => false
+	    else
+	    	redirect_to @article
+    	end
 	end
 
 	def update
@@ -40,7 +48,9 @@ class ArticlesController < ApplicationController
 
 	def destroy
 		@article = Article.find(params[:id])
-		@article.destroy
+		if current_user
+			@article.destroy
+		end
 
 		redirect_to articles_path
 	end
