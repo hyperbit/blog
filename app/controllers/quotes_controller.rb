@@ -22,6 +22,15 @@ class QuotesController < ApplicationController
 		end
 	end
 
+	def edit
+		@quote = Quote.find(params[:id])
+		if current_user
+    		render :action => 'edit', :layout => false
+	    else
+	    	redirect_to @article
+    	end
+	end
+
 	private
 		def quote_params
 			params.require(:quote).permit(:quote, :author)
