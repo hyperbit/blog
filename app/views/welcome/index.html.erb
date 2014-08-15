@@ -1,4 +1,104 @@
-<%= render "layouts/blankheader" %>
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
-<%= render "layouts/blankfooter" %>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Justin Cano | Home Page</title>
+    <meta name="title" content="Justin Cano | Home Page" />
+    <meta name="description" content="Personal Home Page of Justin Cano" />
+
+    <meta name="author" content="Justin Cano">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="onepage-scroll/jquery.onepage-scroll.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/parallax.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+
+            <section class="page1" id="matrix">
+                <div class="page_container">
+                    <div class="content">
+                        <font class="animated fadeInUp heading">welcome.</font>
+                        <p/>
+                        <font class="animated fadeInRight desc">
+                            the public web domain of justin cano.
+                        </font>
+                        <br>
+                        <font class="animated fadeInRight scroll">
+                            <%= link_to "check out my blog", articles_path %></a>
+                        </font>
+                        <font class="animated fadeInRight resume">
+                            or <a href="/JustinCanoCEResume.pdf">view my résumé</a>
+                        </font>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="js/matrix.js"></script>
+
+
+            <section class="page2">
+                <div id="foreground"></div>
+                <div id="midground"></div>
+                <div id="background"></div>
+                <div class="page_container">
+                    <div class="content">
+                        <div class="row">
+                            <span class="tag">software engineer and developer</span>
+                            <br>
+                            <span class="quote hidden-phone">"I have no special talent. I am only passionately curious." <br>
+                            - Albert Einstein</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 about">
+                                My name is Justin Cano, and I am a recent graduate from the University of California, Riverside with a BS in Computer Engineering. I am an aspiring Software Engineer, Developer, and Computer Scientist, with interests in big data, graphic games, embedded systems, design, and technology, and I recognize the need for lifelong learning. I also love to tinker.
+                            </div>
+                            <div class="col-md-4" align="center">
+                                <img class="thumbnail avatar" src="img/linkedin.jpg">
+                            </div>
+                            <div class="col-md-4 about">
+                                <ul class="unstyled no-bullet">
+                                    <li>
+                                        <i class="fa fa-envelope"></i> | 
+                                        <a href="mailto:jcano001@ucr.edu" target="_blank">
+                                        jcano001@ucr.edu
+                                    </a></li>
+                                    <li>
+                                        <i class="fa fa-linkedin"></i> | 
+                                        <a href="https://www.linkedin.com/in/justincano" target="_blank">
+                                        linkedin.com/in/justincano
+                                    </a></li>
+                                    <li>
+                                        <i class="fa fa-facebook"></i> | 
+                                        <a href="https://www.facebook.com/jcano001" target="_blank">
+                                        facebook.com/jcano001
+                                    </a></li>
+                                    <li>
+                                        <i class="fa fa-twitter"></i> | 
+                                        <a href="https://www.twitter.com/canokiid" target="_blank">
+                                        twitter.com/canokiid
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="js/parallax.js"></script>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/onepage.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</body>

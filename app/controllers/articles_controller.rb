@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 		if current_user
 			render :action => 'new', :layout => false
 		else
-	    	redirect_to root_url
+	    	redirect_to articles_path
     	end
 	end
 
