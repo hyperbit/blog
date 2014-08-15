@@ -1,0 +1,3 @@
+[submodule "public/onepage-scroll"]
+	path = public/onepage-scroll
+	url = https://github.com/hyperbit/onepage-scroll.git
