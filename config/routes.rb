@@ -18,7 +18,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   #root 'articles#index'
   #root 'users#new'
-    
+  #root  redirect_to 'http://jcano.info', :status => 301
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
