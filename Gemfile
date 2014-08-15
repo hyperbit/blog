@@ -42,3 +42,5 @@ gem 'rails_12factor', group: :production
 
 # Foundation
 gem 'foundation-rails'
+
+gem 'truncate_html'
