@@ -1,0 +1,21 @@
+#background,#midground,#foreground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#background {
+	z-index:1;
+	/* img found from http://www.superbwallpapers.com/space/messier-81-spiral-galaxy-1685/# */
+	background: url(../img/cover/galaxy.png);
+	background-size:   cover;
+}
+#midground {
+	z-index: 2;
+	background: url(http://css-tricks.com/examples/StarryNightCSS3/images/midground.png);
+}
+#foreground {
+	z-index: 3;
+	background: url(http://css-tricks.com/examples/StarryNightCSS3/images/foreground.png);
+}

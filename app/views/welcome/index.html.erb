@@ -1,4 +1,136 @@
-<%= render "layouts/blankheader" %>
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
-<%= render "layouts/blankfooter" %>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Justin Cano | Home Page</title>
+    <meta name="title" content="Justin Cano | Home Page" />
+    <meta name="description" content="Personal Home Page of Justin Cano" />
+
+    <meta name="author" content="Justin Cano">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="onepage-scroll/jquery.onepage-scroll.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="onepage-scroll/onepage-scroll.css" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/parallax.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+
+            <section class="page1" id="matrix">
+                <div class="page_container">
+                    <div class="content">
+                        <font class="animated fadeInUp heading">welcome.</font>
+                        <p/>
+                        <font class="animated fadeInRight desc">
+                            the public web domain of justin cano.
+                        </font>
+                        <br>
+                        <font class="animated fadeInRight scroll">
+                            scroll down
+                        </font>
+                        <font class="animated fadeInRight resume">
+                            or <a href="/JustinCanoCEResume.pdf">view my résumé</a>
+                        </font>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="js/matrix.js"></script>
+
+
+            <section class="page2">
+                <div id="foreground"></div>
+                <div id="midground"></div>
+                <div id="background"></div>
+                <div class="page_container">
+                    <div class="content">
+                        <div class="row">
+                            <span class="tag">software engineer and developer</span>
+                            <br>
+                            <span class="quote">"I have no special talent. I am only passionately curious." <br>
+                            - Albert Einstein</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4" align="center">
+                                <img class="thumbnail avatar" src="img/linkedin.jpg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="about">
+                                My name is Justin Cano, and I am a recent graduate from the University of California, Riverside with a BS in Computer Engineering. I am an aspiring Software Engineer, Developer, and Computer Scientist, with interests in big data, graphic games, embedded systems, design, and technology, and I recognize the need for lifelong learning. I also love to tinker.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="js/parallax.js"></script>
+
+            <section class="page3">
+                <div class="page_container">
+                    <div class="content">
+                        <div class="row">
+                                <div class="col-md-12 header">
+                                    Contact
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 tag">
+                                <em>"Whether you think you can or you think you can’t, you’re right." –Henry Ford</em>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row info top">
+                            <div class="col-xs-6">
+                                <a href="mailto:jcano001@ucr.edu" target="_blank">
+                                    <i class="fa fa-envelope"></i>
+                                    jcano001@ucr.edu
+                                </a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="https://www.facebook.com/jcano001" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                    facebook.com/jcano001
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row info bottom">
+                            <div class="col-xs-6">
+                                <a href="https://www.linkedin.com/in/justincano" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                    linkedin.com/in/justincano
+                                </a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="https://www.twitter.com/canokiid" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                    twitter.com/canokiid
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-12 badges">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-via="CANOkiid" data-lang="en">Tweet</a>
+                                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.justincano.com&amp;width&amp;layout=button_count&amp;action=recommend&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/onepage.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</body>

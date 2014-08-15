@@ -1,0 +1,222 @@
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*adding a black bg to the body to make things clearer*/
+body {background: black; color: white}
+canvas {display: block;}
+
+@font-face {
+    font-family: Jedi;
+    src: url(../fonts/starjhol.ttf) format('truetype');
+}
+
+a {text-decoration: underline; color: #fff;}
+
+.wrapper {
+   height: 100% !important;
+   height: 100%;
+   margin: 0 auto; 
+   overflow: hidden;
+}
+
+.thumbnail {
+   width: 200px;
+   height: 200px;
+   border: 2px solid white;
+   border-radius: 100px;
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   text-align: center;
+}
+
+
+
+/* PAGE 1 */
+.main section.page1 {
+   background: -moz-element(#matrix);
+   background: -webkit-canvas(matrix);
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.main section.page1 .page_container {
+  position: relative;
+  top: 50%;
+  margin-top: -160px;
+  left: 0;
+  width: 100%;
+}
+
+.main section.page1 .content {
+   color: #D6D6D6;
+   margin-left: auto;
+   margin-right: auto;
+   height: 280px;
+   text-align: center;
+   font-family: "Courier New", monospace;  
+   opacity: 0.75;
+   text-shadow: 1px 4px 6px #000, 0 0 0 #000, 1px 4px 6px #000;
+}
+
+.main section.page1 .content .heading {
+   -webkit-animation-delay: 1s; /* Safari and Chrome */
+   -moz-animation-delay: 1s; /* Firefox */
+    animation-delay: 1s;
+    font-size: 7em;
+    font-weight: bold;
+}
+
+.main section.page1 .content .desc {
+   -webkit-animation-delay: 2.5s; /* Safari and Chrome */
+   -moz-animation-delay: 2.5s; /* Firefox */
+    animation-delay: 2.5s;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.main section.page1 .content .scroll {
+   -webkit-animation-delay: 3s; /* Safari and Chrome */
+   -moz-animation-delay: 3s; /* Firefox */
+    animation-delay: 3s;
+    color: #fff;
+    font-size: 1em;
+}
+
+.main section.page1 .content .resume {
+   -webkit-animation-delay: 4s; /* Safari and Chrome */
+   -moz-animation-delay: 4s; /* Firefox */
+    animation-delay: 4s;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* PAGE 2 */
+.main section.page2 {
+   background: black;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.main section.page2 .page_container {
+  position: relative;
+  top: 50%;
+  margin-top: -225px;
+  left: 0;
+  width: 100%;
+}
+
+.main section.page2 .content {
+   position: relative;
+   color: #D6D6D6;
+   margin-left: auto;
+   margin-right: auto;
+   height: 280px;
+   text-align: center;
+   z-index: 10;
+   font-family: sans-serif;
+   width: 75%;
+   text-shadow: 1px 4px 6px #000, 0 0 0 #000, 1px 4px 6px #000;
+}
+
+.main section.page2 .content .tag {
+   color: #E7FF00;
+   font-size: 2.5em;
+   font-family: Jedi, monospace;  
+}
+
+.main section.page2 .content .quote {
+   color: #fff;
+   font-size: 1.5em;
+   font-family: 'Source Sans Pro', sans-serif; 
+   font-style: italic;
+   font-weight: 300;
+}
+
+.main section.page2 .content .about {
+   color: white;
+   position: relative;
+   font-size:1.25em;
+   font-family: 'Source Sans Pro', sans-serif; 
+   text-align: center;
+}
+
+/* PAGE 3 */
+.main section.page3 {
+   background: #525252;
+ }
+
+.main section.page3 .page_container {
+  position: relative;
+  top: 50%;
+  margin-top: -300px;
+  left: 0;
+  width: 100%;
+}
+
+.main section.page3 .content {
+   font-family: 'Source Sans Pro', sans-serif; 
+   color: white;
+   margin-left: auto;
+   margin-right: auto;
+   height: 280px;
+   width: 80%;
+}
+
+.main section.page3 .content .header {
+  font-size: 5em;
+  text-align: center;
+}
+
+.main section.page3 .content .tag {
+  font-size: 2em;
+  color: #7F7F7F;
+  text-align: center;
+}
+
+.main section.page3 .content .info {
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+
+.info.top {
+  padding-top: 25px;
+}
+
+.info.bottom {
+  padding-bottom: 25px;
+}
+
+.main section.page3 i {
+  color: #7F7F7F;
+  text-align: center;
+  border: 1px solid #7F7F7F;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 2.5px;
+  margin-left: 35px;
+  margin-right: 15px;
+}
+
+.main section.page3 i:hover {
+  color: white;
+}
+
+.main section.page3 hr {
+  color: #7F7F7F;
+}
+
+.main section.page3 a {
+  text-decoration: none;
+}
+.main section.page3 a:hover{
+  color: #7F7F7F;
+}
+
+.badges {
+  background: #525252;
+  text-align: center;
+}
