@@ -124,7 +124,7 @@ a {text-decoration: underline; color: #fff;}
 .main section.page2 .content .tag {
    color: #E7FF00;
    font-size: 2.5em;
-   font-family: Jedi, monospace;  
+   font-family: monospace;  
 }
 
 .main section.page2 .content .quote {
@@ -141,6 +141,9 @@ a {text-decoration: underline; color: #fff;}
    font-family: 'Source Sans Pro', sans-serif; 
    text-align: left;
    text-decoration: none;
+   background-color: rgba(255, 255, 255, .2);
+   border-radius: 10px;
+   padding: 15px;
 }
 
 .main section.page2 .content .about a {
@@ -152,7 +155,7 @@ a {text-decoration: underline; color: #fff;}
 }
 
 .main section.page2 .content .about a:hover {
-    color: #E7FF00;
+    color: #5F5D85;
 }
 
 .main section.page2 .content .about ul {
