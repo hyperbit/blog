@@ -138,9 +138,26 @@ a {text-decoration: underline; color: #fff;}
 .main section.page2 .content .about {
    color: white;
    position: relative;
-   font-size:1.25em;
    font-family: 'Source Sans Pro', sans-serif; 
-   text-align: center;
+   text-align: left;
+   text-decoration: none;
+}
+
+.main section.page2 .content .about a {
+   color: white;
+   position: relative;
+   font-family: 'Source Sans Pro', sans-serif; 
+   text-align: left;
+   text-decoration: none;
+}
+
+.main section.page2 .content .about a:hover {
+    color: #E7FF00;
+}
+
+.main section.page2 .content .about ul {
+  list-style-type: none;
+  font-size: 1.25em;
 }
 
 /* PAGE 3 */
