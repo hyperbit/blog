@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'articles', to: redirect('blog')
+  get 'blog' => 'articles#index', :status => 301
+
   get 'quotes/new'
   resources :quotes
 
