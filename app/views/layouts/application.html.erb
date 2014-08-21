@@ -1,3 +1,9 @@
 <%= render "layouts/header" %>
+	<script>
+	if(!window.location.hash) {
+	    window.location = window.location + '#loaded';
+	    window.location.reload();
+	}
+	</script>
     <%= yield %>
 <%= render "layouts/footer" %>
