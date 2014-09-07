@@ -170,20 +170,19 @@ span.header {
 }
 
 /* FOOTER */
-#footer {
+.footer {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	height: 50%;
-	/*color: #66D9EB;*/
-	/*background-color: #272822;*/
+	/*color: #66D9EB;
+	background-color: #272822;*/
 	color: #fff;
 	background-color: #5F5D85;
-	padding-top: 15px;
+	padding: 15px;
 }
 
-#footer a {
+.footer a {
 	color: #F5F5F5;
 }
-#footer a:hover {
+.footer a:hover {
 	color: #464368;
 }
