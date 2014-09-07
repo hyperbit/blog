@@ -1,4 +1,4 @@
 # HYPERBIT
-## Justin Cano's blog
+Justin Cano's blog
 
 =====
