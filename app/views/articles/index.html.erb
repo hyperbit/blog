@@ -3,7 +3,7 @@
     <h1><%= link_to article.title, article_path(article) %></a></h1>
     <em class="timestamp"><%= article.created_at.strftime("%A, %B %d, %Y") %></em>
     <p>
-    <%= truncate_html(article.text, word_boundary: false, length: 500) %>
+    <%= truncate_html(article.text, word_boundary: false, length: 250) %>
     <%= link_to raw("<p><em>Continue reading <i class=\"fa fa-arrow-circle-o-right\"></i></em></p>"), article_path(article), :id => "continue", :class => "right" %>
     </p>
      
