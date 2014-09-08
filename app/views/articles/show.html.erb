@@ -1,8 +1,13 @@
 <div class="article">
+	
 	<h1><%= @article.title %></h1>
 
 	<em class="timestamp"><%= @article.created_at.strftime("%A, %B %d, %Y") %></em>
-	 
+
+	<br />
+
+	<%= link_to raw("<em><i class=\"fa fa-arrow-circle-o-left\"></i> Back</em>"), articles_path, :id => "continue" %>
+
 	<p>
 	  <%= simple_format(@article.text) %>
 	</p>
